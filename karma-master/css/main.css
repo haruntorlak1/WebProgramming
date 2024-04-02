@@ -5629,7 +5629,7 @@ label {
 /* Contact Success and error Area css
 ============================================================================================ */
 .modal-message .modal-dialog {
-  position: absolute;
+  position: relative;
   top: 36%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%) !important;
@@ -5643,7 +5643,7 @@ label {
     padding-top: 50px;
     padding-bottom: 50px; }
     .modal-message .modal-dialog .modal-content .modal-header .close {
-      position: absolute;
+      position: relative;
       right: -15px;
       top: -15px;
       padding: 0px;
@@ -5661,8 +5661,15 @@ label {
 
 /* End Contact Success and error Area css
 ============================================================================================ */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+  margin: 0;
+}
 .footer-area {
-  padding-top: 100px;
+  margin-top: auto;
+  padding: 20px;
   background-color: #222222; }
   .footer-area h6 {
     color: #fff;
@@ -5733,7 +5740,7 @@ label {
   z-index: 9999;
   cursor: pointer; }
 .single-footer-widget .info {
-  position: absolute;
+  position: relative;
   margin-top: 5%;
   color: #fff;
   font-size: 12px; }
