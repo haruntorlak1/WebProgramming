@@ -1,0 +1,69 @@
+[
+    {
+        "shoeID" : 1,
+        "shoeName" : "MaxRun 210",
+        "shoeBrand" : "Adidas",
+        "shoeCategory" : "Sports shoes",
+        "shoeDate" : "14.03.2018",
+        "shoeDescription" :"Adidas MaxRun 210, make you faster anywhere you go!",
+        "shoePrice": "$250.00",
+        "shoeSalePrice": "$169.99", 
+        "shoeImage" : "img/product/p1.jpg"
+    }
+    ,{
+        "shoeID" : 2,
+        "shoeName" : "Viper 9",
+        "shoeBrand" : "Nike",
+        "shoeCategory" : "Sports shoes",
+        "shoeDate" : "20.01.2024",
+        "shoeDescription" :"Viper 9, a shoe from Nike that will boost your performance in any sport you play!",
+        "shoePrice": "$285.00",
+        "shoeSalePrice": "$229.00", 
+        "shoeImage": "img/product/p2.jpg"
+    }
+    ,{
+        "shoeID" : 3,
+        "shoeName" : "Leather Spirit",
+        "shoeBrand" : "Levi",
+        "shoeCategory" : "Stylish shoes",
+        "shoeDate" : "09.09.2022",
+        "shoeDescription" :"Leather Spirit from Levi will make you feel like you are wearing aligators on your feet!",
+        "shoePrice": "$190.00",
+        "shoeSalePrice": "$159.00", 
+        "shoeImage": "img/product/p3.jpg"
+    }
+    ,{
+        "shoeID" : 4,
+        "shoeName" : "N360",
+        "shoeBrand" : "New Balance",
+        "shoeCategory" : "Stylish shoes",
+        "shoeDate" : "04.05.2023",
+        "shoeDescription" :"New Balance brings you the new N360, a shoe that you will surely enjoy!",
+        "shoePrice": "$300.00",
+        "shoeSalePrice": "$219.00", 
+        "shoeImage": "img/product/p4.jpg"
+    }
+    ,{
+        "shoeID" : 5,
+        "shoeName" : "Panther",
+        "shoeBrand" : "Puma",
+        "shoeCategory" : "Sports shoes",
+        "shoeDate" : "06.06.2020",
+        "shoeDescription" :"Whether you are playing tennis or just going for a walk, the Panther shoes from Puma are your best choice!",
+        "shoePrice": "$200.00",
+        "shoeSalePrice": "$140.00", 
+        "shoeImage": "img/product/p5.jpg"
+    }
+    ,{
+        "shoeID" : 6,
+        "shoeName" : "Notorious",
+        "shoeBrand" : "Asics",
+        "shoeCategory" : "Sports shoes",
+        "shoeDate" : "15.02.2024",
+        "shoeDescription" :"Asics designed the Notorious shoes specifically for your everyday needs!",
+        "shoePrice": "$295.00",
+        "shoeSalePrice": "$219.00", 
+        "shoeImage": "img/product/p6.jpg"
+    }
+   
+]
