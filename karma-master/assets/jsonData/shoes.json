@@ -8,7 +8,7 @@
         "itemDescription" :"Air Max 97, a shoe from Nike that was designed for comfort but also for style.",
         "itemPrice": "$210.00",
         "itemSalePrice": "$189.00", 
-        "itemImage" : "img/max97.jpg"
+        "itemImage" : "assets/img/max97.jpg"
     }
     ,{
         "itemID" : 2,
@@ -19,7 +19,7 @@
         "itemDescription" :"Air Max 95, a Nike shoe for a rainy day but you still want to be drippy.",
         "itemPrice": "$235.00",
         "itemSalePrice": "$169.00", 
-        "itemImage" : "img/max95.jpg"
+        "itemImage" : "assets/img/max95.jpg"
     }
     ,{
         "itemID" : 3,
@@ -30,7 +30,7 @@
         "itemDescription" :"Adidas Superstar, whether you are going to your job, a wedding or a funeral, you can wear them!",
         "itemPrice": "$160.00",
         "itemSalePrice": "$120.00", 
-        "itemImage" : "img/superstar.jfif"
+        "itemImage" : "assets/img/superstar.jfif"
     }
     ,{
         "itemID" : 4,
@@ -41,7 +41,7 @@
         "itemDescription" :"Jordan IV, the legendary shoe from the legendary basketball player!",
         "itemPrice": "$380.00",
         "itemSalePrice": "$250.00", 
-        "itemImage" : "img/jordan4.jpg"
+        "itemImage" : "assets/img/jordan4.jpg"
     }
     ,{
         "itemID" : 5,
@@ -52,7 +52,7 @@
         "itemDescription" :"Kobe Bryant with this brilliant design has made a new playing field in the NBA!",
         "itemPrice": "$235.00",
         "itemSalePrice": "$175.00", 
-        "itemImage" : "img/kobe4.jpg"
+        "itemImage" : "assets/img/kobe4.jpg"
     }
     ,{
         "itemID" : 6,
@@ -63,7 +63,7 @@
         "itemDescription" :"The Air Forces, the shoes, not the military branch, are the perfect shoes for your day!",
         "itemPrice": "$200.00",
         "itemSalePrice": "$150.00", 
-        "itemImage" : "img/airforce.jfif"
+        "itemImage" : "assets/img/airforce.jfif"
     }
    
 ]

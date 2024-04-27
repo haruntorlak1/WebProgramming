@@ -8,7 +8,7 @@
         "shoeDescription" :"Adidas MaxRun 210, make you faster anywhere you go!",
         "shoePrice": "$250.00",
         "shoeSalePrice": "$169.99", 
-        "shoeImage" : "img/product/p1.jpg"
+        "shoeImage" : "assets/img/product/p1.jpg"
     }
     ,{
         "shoeID" : 2,
@@ -19,7 +19,7 @@
         "shoeDescription" :"Viper 9, a shoe from Nike that will boost your performance in any sport you play!",
         "shoePrice": "$285.00",
         "shoeSalePrice": "$229.00", 
-        "shoeImage": "img/product/p2.jpg"
+        "shoeImage": "assets/img/product/p2.jpg"
     }
     ,{
         "shoeID" : 3,
@@ -30,7 +30,7 @@
         "shoeDescription" :"Leather Spirit from Levi will make you feel like you are wearing aligators on your feet!",
         "shoePrice": "$190.00",
         "shoeSalePrice": "$159.00", 
-        "shoeImage": "img/product/p3.jpg"
+        "shoeImage": "assets/img/product/p3.jpg"
     }
     ,{
         "shoeID" : 4,
@@ -41,7 +41,7 @@
         "shoeDescription" :"New Balance brings you the new N360, a shoe that you will surely enjoy!",
         "shoePrice": "$300.00",
         "shoeSalePrice": "$219.00", 
-        "shoeImage": "img/product/p4.jpg"
+        "shoeImage": "assets/img/product/p4.jpg"
     }
     ,{
         "shoeID" : 5,
@@ -52,7 +52,7 @@
         "shoeDescription" :"Whether you are playing tennis or just going for a walk, the Panther shoes from Puma are your best choice!",
         "shoePrice": "$200.00",
         "shoeSalePrice": "$140.00", 
-        "shoeImage": "img/product/p5.jpg"
+        "shoeImage": "assets/img/product/p5.jpg"
     }
     ,{
         "shoeID" : 6,
@@ -63,7 +63,7 @@
         "shoeDescription" :"Asics designed the Notorious shoes specifically for your everyday needs!",
         "shoePrice": "$295.00",
         "shoeSalePrice": "$219.00", 
-        "shoeImage": "img/product/p6.jpg"
+        "shoeImage": "assets/img/product/p6.jpg"
     }
    
 ]
