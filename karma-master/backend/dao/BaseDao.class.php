@@ -6,7 +6,7 @@ class BaseDao{
     protected $connection;
     private $table;
 
-    //Constructor for BaseDao class
+    //This is the constructor for BaseDao class
     public function __construct($table){
         $this -> table = $table;
         try{
@@ -25,20 +25,22 @@ class BaseDao{
         }
     }
 
-    //Return all records
+
+    
+  
     protected function query($query, $params = array()){
         $statement = $this -> connection -> prepare($query);
         $statement -> execute($params);
         return $statement -> fetchAll(PDO::FETCH_ASSOC);
     }
 
-    //Return only a certain record
+    
     protected function query_unique($query, $params){
         $results = $this -> query($query, $params);
         return reset($results);
     }
 
-    //Execute statement function implementation:
+    
     protected function execute($query, $params){
         $prepared_statemet = $this -> connection -> prepare($query);
         if($params){
@@ -50,7 +52,6 @@ class BaseDao{
         return $prepared_statemet;
     }
 
-    //Default function for INSERTING a query into a SPECIFIED TABLE from the ENTITY:
     public function insert($table, $entity){
         $query = "INSERT INTO {$table} (";
 
