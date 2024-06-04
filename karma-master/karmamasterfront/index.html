@@ -33,7 +33,10 @@
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/spapp.css">
+	<link rel="stylesheet" href="assets/css/toastr.min.css"/>
 	
+
+	<link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet"/>
 	
 	
 </head>
@@ -143,14 +146,7 @@
 				<div class="single-footer-widget mail-chimp">
 					<h6 class="mb-20">Instagram Feed</h6>
 					<ul class="instafeed d-flex flex-wrap">
-						<li><img src="assets/img/i1.jpg" alt=""></li>
-						<li><img src="assets/img/i2.jpg" alt=""></li>
-						<li><img src="assets/img/i3.jpg" alt=""></li>
-						<li><img src="assets/img/i4.jpg" alt=""></li>
-						<li><img src="assets/img/i5.jpg" alt=""></li>
-						<li><img src="assets/img/i6.jpg" alt=""></li>
-						<li><img src="assets/img/i7.jpg" alt=""></li>
-						<li><img src="assets/img/i8.jpg" alt=""></li>
+					
 					</ul>
 				</div>
 			</div>
@@ -189,11 +185,16 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.spapp.min.js"></script>
 
+
+<script src="assets/js/toastr.min.js"></script>
+
 <script src="utils/utils.js"></script>
 <!-- Initializing the SPAPP-->
-<script>
-Utils.init_spapp();
-</script>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
+
+></script>
 
 
 
@@ -201,10 +202,28 @@ Utils.init_spapp();
 <!-- Load jQuery Validate -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
 
+<script
+src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"
+
+></script>
+
 <!-- Load other custom scripts -->
 
 <script src="assets/js/ajax/forms.js"></script>
+<script src="./utils/form_validation.js"></script>
+<script src="./utils/utils.js"></script>
+<script src="./utils/constants.js"></script>
+<script src="./utils/rest_client.js"></script>
+<script src="./services/Shoes.js"></script>
 
+
+<script>
+	if (Utils.get_from_localstorage("user")) {
+	  Utils.init_spapp();
+	} else {
+	  window.location = "login";
+	}
+  </script>
 </body>
 
 </html>
