@@ -1,0 +1,98 @@
+<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>Login/Register</h1>
+                <nav class="d-flex align-items-center">
+                    <a href="#home">Home<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="#category">Login/Register</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================Login Box Area =================-->
+<section class="login_box_area section_gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="login_box_img">
+                    <img class="img-fluid" src="assets/img/login.jpg" alt="">
+                    <div class="hover">
+                        <h4>New to our website?</h4>
+                        <a class="primary-btn" data-toggle="modal" data-target="#createAccountModal">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="login_form_inner">
+                    <h3>Log in</h3>
+                    <form class="row login_form" method="post" id="contactForm">
+                        <div class="col-md-12 form-group">
+                            <input type="email" class="form-control" id="loginemail" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control" id="loginpassword" name="loginpassword" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <div class="creat_account">
+                                <input type="checkbox" id="f-option2" name="selector">
+                                <label for="f-option2">Keep me logged in</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <button type="submit" value="submit" class="primary-btn">Log In</button>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="createAccountModal" tabindex="-1" role="dialog" aria-labelledby="createAccountModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createAccountModalLabel">Create an Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="createAccountForm">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password"id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================End Login Box Area =================-->
+<script>
+FormValidation.validate("#createAccountForm", {}, function (data) {
+    $('#createAccountModal button[type="submit"]').attr("disabled", "disabled"); // Disable the submit button to prevent multiple submissions
+
+    $.post(Constants.API_BASE_URL + "user/add", data)
+        .done(function (data) {
+            $('#createAccountModal').modal('hide'); // Close the modal
+            toastr.success("You have successfully created an account!");
+
+            // You can redirect or perform any other action here
+        })
+        .fail(function (xhr, textStatus, errorThrown) {
+            toastr.error("Error: " + errorThrown);
+            $('#createAccountModal button[type="submit"]').removeAttr("disabled"); // Re-enable the submit button
+        });
+});
+
+</script>
